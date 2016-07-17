@@ -28,7 +28,6 @@ $(document).ready(function(){
 
   $("#jq").click(function(){
   	var url = window.location.href;
-  	$( "#layout" ).load( url, function() {
-  	});
+  	$( "#layout" ).load( url, "#layout");
   });
 });
