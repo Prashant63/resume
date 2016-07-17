@@ -27,7 +27,8 @@ $(document).ready(function(){
   	});
 
   $("#jq").click(function(){
-  	var url = window.location.href;
+  	//var url = window.location.href;
+    var url = "../index.html"
   	$( "#layout" ).load( url, "#layout");
   });
 });
