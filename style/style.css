@@ -55,6 +55,11 @@ header div{
     width: 100%;
 }
 
+header div a{
+	color: #000000;
+	text-decoration: none;
+}
+
 header div a:hover{
 	background-color: #000000;
 	color:#FFFFFF;
@@ -63,7 +68,6 @@ header div a:hover{
 
 header div span{
 	padding: 0 10px;
-    border-right: 1px solid;
 }
 
 .container{
@@ -125,17 +129,22 @@ h1, h2{
 	display: inline-block;
 	width:30%;
 }
-/*
-#skills_description div:nth-child(n+7){
-	display: inline-block;
-	width:30%;
-}*/
 
 #skills_description div:nth-child(even){
 	background-color:#000000;
 	color: #ffffff;
 }
 /*==================================*/
+
+#layout{
+	    height: auto;
+    width: 414px;
+    background: white;
+    position: relative;
+    right: 0;
+    left: 500px;
+}
+
 
 footer{
 	height:150px;
@@ -146,9 +155,9 @@ footer{
 	color: #ffffff;
 }
 
-footer div{
+footer > div{
 	display: inline-block;
-	width:100%;
+	width:auto;
 }
 
 footer div.tree{
@@ -169,33 +178,71 @@ footer div.cycle{
 
 footer div.city{
     position: relative;
-    bottom: 50px;
+    bottom: 41px;
     height: 50px;
-    width: 50px;
-    left: 80%;
+    width: 200px;
+    left: 64%;
 }
 
-footer div img{
+footer > div img{
 	width:100%;
 	height: 100%;
 }
 
-footer div.copyright{
-	position: relative;
-    left: 50px;
+.footer_content div.copyright{
+	position: absolute;
+    left: 10px;
 }
 
-footer div.copyright span{
+.footer_content div.copyright span{
 	display: block;
 }
 
-footer div.copyright div{
+.footer_content div.copyright div{
 	font-size: 20px;
     font-family: fantasy;
     font-weight: 100;
 }
 
-@media screen and (max-width: 415px){
+.footer_content{
+	width:100%;
+}
+
+.footer_content > div{
+	width:50%;
+	display: inline-block;
+}
+
+.social{
+	display: inline-block;
+	position: relative;
+    left: 50%;
+}
+
+.social div{
+	display: inline-block;
+}
+
+.social div:last-child{
+	margin-left: 10%;
+}
+
+.social a{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+.social a:hover{
+	color:#ffffff;
+}
+
+.social i{
+	margin-right: 15px;
+    width: 10px;
+}
+
+@media screen and (max-width: 435px){
 	.container{
 		width:100%;
 		height: 100%;
@@ -238,5 +285,16 @@ footer div.copyright div{
 	#skills_description div:nth-child(-n+3), #skills_description div:nth-child(n+4){
 		width:32.6%;
 		font-size: 23px;
+	}
+
+	.footer_content{
+		width: 100%;
+	    position: absolute;
+	    left: 0;
+	    top: 15px;
+	}
+
+	.social div:last-child{
+		margin-left: 0;
 	}
 }
